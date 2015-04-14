@@ -1,31 +1,29 @@
-# Themes
+# თემები
 
 <p class="uk-article-lead">Create your own theme to control the look of your site.</p>
 
-Themes and extensions in Pagekit are very much the same. The biggest difference
-you will encounter will be in naming things `theme.php` instead of
-`extension.php` and a few basic configuration differences. Except for that, try
-not to think in terms of developing a theme vs. developing an extension but
-rather understand that you have access to Pagekit's framework all the time.
+Themes და extensions  Pagekit-ში ბევრი საერთო აქვთ. ძირითადი განსხვავებები გამოიხატება დასახელებაში  `theme.php` და `extension.php`, ასევე არის რამოდენიმე განსხვავება საბაზო კონფიგურაციაში. ამის მიუხედავად 
+არ უნდა ვიფიქროთ, რომ განიხილება თემის და გაფართოების ცალცალკე შემუშავება, არამედ  Pagekit's ფრეიმვორკთან გვაქვს
+მუდმივი დაშვება.
 
-## Basic structure
+## სტრუქტურის ბაზა
 
-The easiest way to get started with a new theme is by using
-our command line tool to create the skeleton file structure.
+ყველაზე ადვილი მეთოდი ახალი თემის შექმნის და მისი შესაბამისი ფაილების ჩონჩხის
+შექმნის ინსტრუმეტისაქმნელად არის ტერმინალის ბრძანება.
 
 ```bash
 cd path/to/pagekit
 ./pagekit theme:generate mytheme
 ```
 
-You will be prompted for some information needed to initialize the theme.
+ახალი თემის ინიციალიზაციისათვის შემოთავაზბული იქნება რამოდენიმე კითხვა, რომელზეც უნდა გეცეს პასუხი.
 
-| Input             | Example               | Description |
+| კითხვა             | მაგალითი               | აღწერა |
 |-------------------|-----------------------|--------------|
-| `Title`           | `My Theme`            | The human readable name of your theme
-| `Author`          | `YOOtheme`            | Your name or your company's name
-| `Email`           | `demo@yootheme.com`   | Your email address
-| `PHP Namespace`   | `MyTheme`             | Identifier used to organize your code files. PHP namespaces usually follow a CamelCase syntax.
+| `Title`           | `My Theme`            | თემის დასახელება ადამიანურად
+| `Author`          | `YOOtheme`            | თქვენი ან თქვენი კომპანიის სახელი
+| `Email`           | `demo@yootheme.com`   | ფოსტის მისამართი
+| `PHP Namespace`   | `MyTheme`             | იდენთიფიკატორი, რომელიც გამოიყენება ფაილების ორგანიზებითამთის. PHP namespaces იყენებს CamelCase სინტაქს.
 
 This produces the following file structure inside the directory `/themes/mytheme`. Note that this is the minimal setup for a theme, these 3 files are required for a valid theme.
 
