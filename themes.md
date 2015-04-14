@@ -1,6 +1,6 @@
 # თემები
 
-<p class="uk-article-lead">Create your own theme to control the look of your site.</p>
+<p class="uk-article-lead">საითის გამოხატულების შესაცვლელად საკუთარი თემის შექმნა.</p>
 
 Themes და extensions  Pagekit-ში ბევრი საერთო აქვთ. ძირითადი განსხვავებები გამოიხატება დასახელებაში  `theme.php` და `extension.php`, ასევე არის რამოდენიმე განსხვავება საბაზო კონფიგურაციაში. ამის მიუხედავად 
 არ უნდა ვიფიქროთ, რომ განიხილება თემის და გაფართოების ცალცალკე შემუშავება, არამედ  Pagekit's ფრეიმვორკთან გვაქვს
@@ -25,16 +25,19 @@ cd path/to/pagekit
 | `Email`           | `demo@yootheme.com`   | ფოსტის მისამართი
 | `PHP Namespace`   | `MyTheme`             | იდენთიფიკატორი, რომელიც გამოიყენება ფაილების ორგანიზებითამთის. PHP namespaces იყენებს CamelCase სინტაქს.
 
-This produces the following file structure inside the directory `/themes/mytheme`. Note that this is the minimal setup for a theme, these 3 files are required for a valid theme.
+**შენიშვნა:** Namespace დაარქვით  Pagekit\MyTheme 
 
-| Folder / File | Description |
+შედეგად შეიქთმნება შემდეგი ფაილების სტრუქტურა პაპკაში `/themes/mytheme`. ყურადღება მიაქციეთ, რომ ესაა
+ის მინიმუმი კონფიგურაციისათვის, მაგრამ 3 ფაილი არის აუცილებელი ვალიდური თემისათვის.
+
+| პაპკა / ფაილი | აღწერა |
 |---------------|-------------|
-| `/templates` | The markup files are located in this folder |
-| `/templates/template.razr` | The main markup file |
-| `theme.json` | Holds the metadata for the system and the marketplace |
-| `theme.php` | Holds the themes configuration, setup and custom code |
+| `/templates` | გაფორმების ყველა ფაილი არის ამ პაპკაში |
+| `/templates/template.razr` | ძირითადი შაბლონი |
+| `theme.json` | ძირითადი  metadata სისტემისათვის და  marketplace-თვის |
+| `theme.php` | შეიძცავს თემის კონფიგურაციას, პარამეტრებს და საკუთარ პროგრამულ კოდს |
 
-**Note** Can't see your changes in the frontend? Don't forget to enable your theme in the admin area.
+**Note** ვერ ხედავთ ცვლილებებს თქვენს საითზე? არ დაგავიწყდეთ შექმნილი თემის გააქტიურება ადმინ პანელიდან.
 
 ## Metadata
 
